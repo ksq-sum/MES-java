@@ -1,0 +1,13 @@
+com\ktg\generator\util\VelocityInitializer.class
+com\ktg\generator\mapper\GenTableMapper.class
+com\ktg\generator\mapper\GenTableColumnMapper.class
+com\ktg\generator\service\IGenTableService.class
+com\ktg\generator\service\IGenTableColumnService.class
+com\ktg\generator\util\GenUtils.class
+com\ktg\generator\config\GenConfig.class
+com\ktg\generator\util\VelocityUtils.class
+com\ktg\generator\service\GenTableColumnServiceImpl.class
+com\ktg\generator\controller\GenController.class
+com\ktg\generator\domain\GenTableColumn.class
+com\ktg\generator\service\GenTableServiceImpl.class
+com\ktg\generator\domain\GenTable.class
