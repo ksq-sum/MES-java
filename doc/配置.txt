@@ -1,0 +1,11 @@
+MySql:
+	Port:3306
+	user:1.root mysql123456
+	        2.ksq ksq123456
+	数据库：j2eedb
+
+JDK11:
+安装路径：D:\install\jdk\Java\jdk-11.0.2\
+
+Redis:
+	port:6388
