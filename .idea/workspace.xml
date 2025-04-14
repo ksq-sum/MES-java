@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fe579ac9-1112-4cb4-9d39-6b230441dd8c" name="更改" comment="销售订单">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/controller/seller/MESProductionOrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/controller/seller/MESProductionOrdersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/controller/seller/MESProductionWorksController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/controller/seller/MESProductionWorksController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/controller/seller/SalesOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/controller/seller/SalesOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/repository/MESProductionWorksRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/repository/MESProductionWorksRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/repository/SalesOrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/repository/SalesOrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/service/MESProductionWorksService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/service/MESProductionWorksService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/service/SalesOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/service/SalesOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/controller/seller/MESProductionOrdersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/controller/seller/MESProductionOrdersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/controller/seller/MESProductionWorksController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/controller/seller/MESProductionWorksController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/controller/seller/SalesOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/controller/seller/SalesOrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/repository/MESProductionWorksRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/repository/MESProductionWorksRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/repository/SalesOrderRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/repository/SalesOrderRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/service/MESProductionWorksService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/service/MESProductionWorksService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/service/SalesOrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/service/SalesOrderService.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Ying897897&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ksq-sum/MES-java.git&quot;,
+    &quot;accountId&quot;: &quot;696e1187-d0f3-4916-80fb-99133c71e391&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="customMavenHome" value="D:\maven\apache-maven-3.9.9" />
+        <option name="localRepository" value="D:\maven\maven-repository" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+        <option name="userSettingsFile" value="D:\maven\apache-maven-3.9.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="PerforceDirect.Settings">
+    <option name="CHARSET" value="无" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2rFRfJib43CWsCdO1rExyEnCvZg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.CaptchaController.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ImageDownloader.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ktg-admin [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.RuoYiApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ideadaima/ktg-mes&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.29425287&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ktg.web.controller.seller" />
+      <recent name="com.ktg.web.service" />
+      <recent name="com.ktg.web.repository" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.RuoYiApplication">
+    <configuration name="RuoYiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../jdk" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="ktg-admin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ktg.RuoYiApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ktg.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ktg-admin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.Unnamed" />
+      <item itemvalue="Spring Boot.RuoYiApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.RuoYiApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="StructureViewState">
+    <option name="selectedTab" value="Logical" />
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="fe579ac9-1112-4cb4-9d39-6b230441dd8c" name="更改" comment="" />
+      <created>1736152939384</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736152939384</updated>
+      <workItem from="1736152940599" duration="9437000" />
+      <workItem from="1737185525783" duration="20240000" />
+      <workItem from="1737452664958" duration="3283000" />
+      <workItem from="1737530825935" duration="3756000" />
+      <workItem from="1739354485156" duration="802000" />
+      <workItem from="1739355306578" duration="20000" />
+      <workItem from="1739355336710" duration="88000" />
+      <workItem from="1739355444079" duration="107000" />
+      <workItem from="1739355560971" duration="5880000" />
+      <workItem from="1739431357663" duration="124493000" />
+      <workItem from="1743426846506" duration="1249000" />
+      <workItem from="1743486588777" duration="803000" />
+      <workItem from="1743488192268" duration="5177000" />
+      <workItem from="1743496659219" duration="1440000" />
+      <workItem from="1743498212858" duration="162000" />
+      <workItem from="1743498423543" duration="688000" />
+      <workItem from="1743499717795" duration="438000" />
+      <workItem from="1743554844521" duration="26492000" />
+      <workItem from="1743640699553" duration="691000" />
+      <workItem from="1743641398520" duration="65000" />
+      <workItem from="1743641470069" duration="1560000" />
+      <workItem from="1743646096233" duration="101000" />
+      <workItem from="1743646201950" duration="16893000" />
+      <workItem from="1743987347495" duration="30636000" />
+      <workItem from="1744073725756" duration="38873000" />
+    </task>
+    <task id="LOCAL-00001" summary="更改">
+      <option name="closed" value="true" />
+      <created>1744074680043</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744074680043</updated>
+    </task>
+    <task id="LOCAL-00002" summary="销售订单">
+      <option name="closed" value="true" />
+      <created>1744075919781</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1744075919781</updated>
+    </task>
+    <task id="LOCAL-00003" summary="销售订单">
+      <option name="closed" value="true" />
+      <created>1744080318660</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1744080318660</updated>
+    </task>
+    <task id="LOCAL-00004" summary="销售订单">
+      <option name="closed" value="true" />
+      <created>1744080350543</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1744080350543</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework.security:spring-security-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-websocket" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.validation:jakarta.validation-api" />
+    <option featureType="dependencySupport" implementationName="java:io.projectreactor:reactor-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate.validator:hibernate-validator" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-messaging" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="更改" />
+    <MESSAGE value="销售订单" />
+    <option name="LAST_COMMIT_MESSAGE" value="销售订单" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

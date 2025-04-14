@@ -1,0 +1,13 @@
+D:\ideadaima\ktg-mes\ktg-generator\src\main\java\com\ktg\generator\util\VelocityUtils.java
+D:\ideadaima\ktg-mes\ktg-generator\src\main\java\com\ktg\generator\domain\GenTable.java
+D:\ideadaima\ktg-mes\ktg-generator\src\main\java\com\ktg\generator\service\GenTableServiceImpl.java
+D:\ideadaima\ktg-mes\ktg-generator\src\main\java\com\ktg\generator\domain\GenTableColumn.java
+D:\ideadaima\ktg-mes\ktg-generator\src\main\java\com\ktg\generator\util\GenUtils.java
+D:\ideadaima\ktg-mes\ktg-generator\src\main\java\com\ktg\generator\mapper\GenTableMapper.java
+D:\ideadaima\ktg-mes\ktg-generator\src\main\java\com\ktg\generator\service\IGenTableColumnService.java
+D:\ideadaima\ktg-mes\ktg-generator\src\main\java\com\ktg\generator\service\IGenTableService.java
+D:\ideadaima\ktg-mes\ktg-generator\src\main\java\com\ktg\generator\util\VelocityInitializer.java
+D:\ideadaima\ktg-mes\ktg-generator\src\main\java\com\ktg\generator\service\GenTableColumnServiceImpl.java
+D:\ideadaima\ktg-mes\ktg-generator\src\main\java\com\ktg\generator\config\GenConfig.java
+D:\ideadaima\ktg-mes\ktg-generator\src\main\java\com\ktg\generator\mapper\GenTableColumnMapper.java
+D:\ideadaima\ktg-mes\ktg-generator\src\main\java\com\ktg\generator\controller\GenController.java
