@@ -63,20 +63,21 @@ public class MESProductionOrdersController {
                 for (Map<String, Object> child : children) {
                     try {
                         MESProductionWorks mesProductionWorks = new MESProductionWorks();
-                        mesProductionWorks.setGlobalOrderNo(order.get("globalOrderNo").toString());
+                        mesProductionWorks.setGlobalOrderNo(order.get("globalOrderNo") != null ? order.get("globalOrderNo").toString() : "");
                         mesProductionWorks.setWorkPlanCode("RO_" + orderTime);
-                        mesProductionWorks.setOrderPayTime(order.get("globalPaymentTime").toString());
-                        mesProductionWorks.setPlanEndTime(order.get("planEndTime").toString());
+                        mesProductionWorks.setOrderPayTime(order.get("globalPaymentTime") != null ? order.get("globalPaymentTime").toString() : "");
+                        mesProductionWorks.setPlanEndTime(order.get("planEndTime") != null ? order.get("planEndTime").toString() : "");
 
-                        mesProductionWorks.setSku(child.get("sku").toString());
-                        mesProductionWorks.setMsku(child.get("msku").toString());
-                        mesProductionWorks.setCount((Integer) child.get("count"));
-                        mesProductionWorks.setCraft(child.get("craft").toString());
-                        mesProductionWorks.setDepart(child.get("depart").toString());
-                        mesProductionWorks.setProductImage(child.get("product_image").toString());
-                        mesProductionWorks.setRenderingImage(child.get("rendering_image").toString());
-                        mesProductionWorks.setLocalName(child.get("local_product_name").toString());
-                        mesProductionWorks.setProductPlanCode("RW_" + orderTime + "_" + child.get("sku").toString());
+                        mesProductionWorks.setSku(child.get("sku") != null ? (String) child.get("sku") : "");
+                        mesProductionWorks.setMsku(child.get("msku") != null ? child.get("msku").toString() : "");
+                        mesProductionWorks.setCount(child.get("count") != null ? (Integer) child.get("count") : 0);
+                        mesProductionWorks.setCraft(child.get("craft") != null ? child.get("craft").toString() : "");
+                        mesProductionWorks.setDepart(child.get("depart") != null ? child.get("depart").toString() : "");
+                        mesProductionWorks.setProductImage(child.get("product_image") != null ? child.get("product_image").toString() : "");
+                        mesProductionWorks.setRenderingImage(child.get("rendering_image") != null ? child.get("rendering_image").toString() : "");
+                        mesProductionWorks.setLocalName(child.get("local_product_name") != null ? child.get("local_product_name").toString() : "");
+                        String sku = child.get("sku") != null ? child.get("sku").toString() : "";
+                        mesProductionWorks.setProductPlanCode("RW_" + orderTime + "_" + sku);
 
                         System.out.println("mesProductionWorks:" + mesProductionWorks);
 
