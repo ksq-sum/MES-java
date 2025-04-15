@@ -16,9 +16,11 @@ public interface SalesOrderRepository extends JpaRepository<SalesOrder, String> 
     Optional<SalesOrder> findByGlobalOrderNo(String globalOrderNo);
 
     //分页根据一部分条件进行查询
-    @Query("select s from SalesOrder s where (s.platformStatus=:platformStatus or :platformStatus ='' or :platformStatus is null) " +
-            "and ((s.requestStatus=:a or s.requestStatus=:b ) or (:a='' or :a is null))")
-    Page<SalesOrder> findAllBy(Pageable pageable,@Param("platformStatus") Integer platformStatus,@Param("a") Integer a,@Param("b") Integer b);
+    @Query("select s from SalesOrder s where (:platformStatus is null or s.platformStatus = :platformStatus) " +
+            "and ((s.requestStatus=:a or s.requestStatus=:b ) or (:a='' or :a is null))" +
+            "and (s.globalOrderNo=:globalOrderNo or :globalOrderNo ='' or :globalOrderNo is null)" +
+            "and (s.ifOutTime=:ifOutTime or :ifOutTime ='' or :ifOutTime is null)")
+    Page<SalesOrder> findAllBy(Pageable pageable,@Param("platformStatus") Integer platformStatus,@Param("a") Integer a,@Param("b") Integer b,@Param("globalOrderNo") String globalOrderNo,@Param("ifOutTime") Integer ifOutTime);
 
     //批量修改
     @Modifying

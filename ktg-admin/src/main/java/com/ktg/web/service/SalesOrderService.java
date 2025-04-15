@@ -23,12 +23,12 @@ public class SalesOrderService {
     }
 
     //分页查询
-    public Page<SalesOrder> getAllSalesOrders(int page, int size, String sortField, String sortDirection,Integer platformStatus,Integer a,Integer b) {
+    public Page<SalesOrder> getAllSalesOrders(int page, int size, String sortField, String sortDirection,Integer platformStatus,Integer a,Integer b,String globalOrderNo,Integer ifOutTime) {
         //创建排序对象
         Sort sort = Sort.by(Sort.Direction.fromString(sortDirection), sortField);
         // 创建分页请求对象
         Pageable pageable = PageRequest.of(page, size, sort);
-        return salesOrderRepository.findAllBy(pageable,platformStatus,a,b);
+        return salesOrderRepository.findAllBy(pageable,platformStatus,a,b,globalOrderNo,ifOutTime);
     }
 
     public boolean updatePlatformStatus(String globalOrderNo, int platformStatus) {

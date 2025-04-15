@@ -6,6 +6,7 @@ import com.ktg.web.service.SalesOrderService;
 import com.ktg.web.service.SalesOrderSkuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.repository.query.Param;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -41,11 +42,13 @@ public class SalesOrderController {
             @RequestParam(defaultValue = "desc") String sortDirection,
             Integer platformStatus,
             Integer a,
-            Integer b
+            Integer b,
+            String globalOrderNo,
+            Integer ifOutTime
     ) {
-        System.out.println("page:"+page);
+        System.out.println("platformStatus:"+platformStatus);
         Map<String, Object> orderMapZ = new HashMap<>();
-        Page<SalesOrder> salesOrders = salesOrderService.getAllSalesOrders(page, size, sortField, sortDirection,platformStatus,a,b);
+        Page<SalesOrder> salesOrders = salesOrderService.getAllSalesOrders(page, size, sortField, sortDirection,platformStatus,a,b,globalOrderNo,ifOutTime);
         System.out.println("salesOrders:"+salesOrders.getTotalElements());
         List<Map<String, Object>> orderDictionaries = new ArrayList<>();
         //
@@ -66,8 +69,8 @@ public class SalesOrderController {
             orderMap.put("globalPaymentTime",order.getGlobalPaymentTime());
 
             // 在这里处理每个 SalesOrder 对象，例如打印
-            String globalOrderNo = order.getGlobalOrderNo();
-            List<Object[]> salesOrderSkus = salesOrderSkuService.getSalesOrdersByGlobalOrderNo(globalOrderNo);
+            String globalOrderNo1 = order.getGlobalOrderNo();
+            List<Object[]> salesOrderSkus = salesOrderSkuService.getSalesOrdersByGlobalOrderNo(globalOrderNo1);
             List<Map<String, Object>> skuDictionaries = new ArrayList<>();
 //            System.out.println(salesOrderSkus);
             for (Object[] skuArray : salesOrderSkus) {
@@ -82,7 +85,7 @@ public class SalesOrderController {
                 skuMap.put("product_image",sku.getProductImage());
                 skuMap.put("rendering_image",sku.getRenderingImage());
                 skuMap.put("local_product_name",sku.getLocalProductName());
-                skuMap.put("globalOrderNo",globalOrderNo);
+                skuMap.put("globalOrderNo",globalOrderNo1);
                 skuMap.put("delete_flag",null);
                 // 添加其他字段
                 skuDictionaries.add(skuMap);

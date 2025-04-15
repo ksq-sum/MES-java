@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe579ac9-1112-4cb4-9d39-6b230441dd8c" name="更改" comment="销售生产">
+    <list default="true" id="fe579ac9-1112-4cb4-9d39-6b230441dd8c" name="更改" comment="创建成产工单错误修改(提取字段为空判断)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/controller/seller/AddSkuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/controller/seller/AddSkuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/controller/seller/MESProductionOrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/controller/seller/MESProductionOrdersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/controller/seller/SalesOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/controller/seller/SalesOrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/controller/seller/SellerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/controller/seller/SellerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/repository/SalesOrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/repository/SalesOrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/service/SalesOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/service/SalesOrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/controller/seller/AddSkuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/controller/seller/AddSkuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/controller/seller/MESProductionOrdersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/controller/seller/MESProductionOrdersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/controller/seller/SalesOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/controller/seller/SalesOrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/controller/seller/SellerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/controller/seller/SellerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/repository/SalesOrderRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/repository/SalesOrderRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/service/SalesOrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/service/SalesOrderService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744624510559</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="创建成产工单错误修改(提取字段为空判断)">
+      <option name="closed" value="true" />
+      <created>1744697127590</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1744697127590</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +284,8 @@
     <MESSAGE value="更改" />
     <MESSAGE value="销售订单" />
     <MESSAGE value="销售生产" />
-    <option name="LAST_COMMIT_MESSAGE" value="销售生产" />
+    <MESSAGE value="创建成产工单错误修改(提取字段为空判断)" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建成产工单错误修改(提取字段为空判断)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

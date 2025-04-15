@@ -191,75 +191,8 @@ public class AddSkuController {
     }
 
 
-    @GetMapping("erpParams")
-    public Map<String,Object> erpParams() throws Exception {
-        Map<String,Object> params = new HashMap<>();
-        String accessToken = getAccessToken();
-        long timestampInSeconds = System.currentTimeMillis() / 1000;
-        params.put("appid", APP_ID);
-        params.put("sign",  getSign(accessToken,timestampInSeconds));
-        params.put("token", accessToken);
-        params.put("time", timestampInSeconds);
-        return params;
-    }
 
 
-    private JSONObject ActiveList(List<Object> local_sku) throws Exception {
-        for (int attempt = 0; attempt < 5; attempt++) {
-            long timestampInSeconds = System.currentTimeMillis() / 1000;
-            String accessToken = getAccessToken();
-            String sign = getSign(accessToken, timestampInSeconds);
-            URL url = new URL("https://openapi.lingxing.com/basicOpen/multiplatform/shopify/variantList" + "?access_token=" + accessToken + "&sign=" + sign + "&timestamp=" + timestampInSeconds + "&app_key=" + APP_ID+"&local_sku"+local_sku);
-            HttpURLConnection conn = null;
-            try {
-                conn = createConnection(url.toString(), "POST");
-                conn.setRequestProperty("Content-Type", "application/json");
 
-                JSONObject requestBody = new JSONObject();
-                // 写入请求体
-                conn.getOutputStream().write(requestBody.toString().getBytes("utf-8"));
 
-                int responseCode = conn.getResponseCode();
-                if (responseCode == HttpURLConnection.HTTP_OK) {
-                    String responseContent = getResponseContent(conn);
-                    JSONObject jsonResponse = new JSONObject(responseContent);
-
-                    System.out.println("{code}:" + jsonResponse.getInt("code"));
-                    Integer code = jsonResponse.getInt("code");
-                    if (code.equals(0)) {
-                        JSONArray data = jsonResponse.optJSONArray("data");
-                        if (data != null) {
-                            for (int i = 0; i < data.length(); i++) {
-                                JSONObject order = data.getJSONObject(i);
-                                String productName = order.optString("product_name", null);
-                                String sku = order.optString("sku", null);
-
-                                ActiveItems activeItems = new ActiveItems();
-                                activeItems.setSku(sku);
-                                activeItems.setLocalName(productName);
-                                activeItems.setCreateTime(getNow());
-                                activeItemsService.save(activeItems);
-                            }
-                        }
-                    }
-                    return jsonResponse;
-                } else {
-                    throw new IOException("Failed to fetch order list: HTTP response code " + responseCode);
-                }
-            } catch (IOException e) {
-                System.err.println("Attempt " + (attempt + 1) + " failed: " + e.getMessage());
-                if (attempt == 4) {
-                    throw e; // 如果到达最大重试次数，抛出异常
-                }
-            } finally {
-                if (conn != null) {
-                    conn.disconnect(); // 关闭连接
-                }
-            }
-
-            Thread.sleep(2000); // 等待 2 秒后重试
-        }
-
-        throw new RuntimeException("Failed to fetch order list after 5 attempts: API sign not correct");
-    }
 }
