@@ -1,10 +1,12 @@
 package com.ktg.web.domain;
 
+import lombok.ToString;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
+@ToString
 @Entity
 @Table(name = "ACTIVE_ITEMS")
 public class ActiveItems {

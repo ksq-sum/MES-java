@@ -4,18 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe579ac9-1112-4cb4-9d39-6b230441dd8c" name="更改" comment="创建成产工单错误修改(提取字段为空判断)">
+    <list default="true" id="fe579ac9-1112-4cb4-9d39-6b230441dd8c" name="更改" comment="测试更改（4.15）">
+      <change afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/controller/seller/MESCRAFTController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/controller/seller/MESPROCESSController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/domain/MESCRAFT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/domain/MESPROCESS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/repository/MESCRAFTRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/repository/MESPROCESSRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/service/MESCRAFTService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/service/MESPROCESSService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/controller/seller/AddSkuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/controller/seller/AddSkuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/controller/seller/SalesOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/controller/seller/SalesOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/controller/seller/SellerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/controller/seller/SellerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/repository/SalesOrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/repository/SalesOrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/service/SalesOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/service/SalesOrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/controller/seller/AddSkuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/controller/seller/AddSkuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/controller/seller/SalesOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/controller/seller/SalesOrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/controller/seller/SellerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/controller/seller/SellerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/repository/SalesOrderRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/repository/SalesOrderRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/service/SalesOrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/service/SalesOrderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/controller/seller/ActiveItemsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/controller/seller/ActiveItemsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/domain/ActiveItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/domain/ActiveItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/repository/ActiveItemsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/repository/ActiveItemsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/service/ActiveItemsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/service/ActiveItemsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/controller/common/CaptchaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/controller/common/CaptchaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/controller/seller/ActiveItemsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/controller/seller/ActiveItemsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/controller/seller/SalesOrderSkuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/controller/seller/SalesOrderSkuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/domain/ActiveItems.class" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/domain/ActiveItems.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/repository/ActiveItemsRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/repository/ActiveItemsRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/repository/SalesOrderSkuRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/repository/SalesOrderSkuRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/service/ActiveItemsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/service/ActiveItemsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/service/SalesOrderSkuService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/service/SalesOrderSkuService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +73,9 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2rFRfJib43CWsCdO1rExyEnCvZg" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -240,7 +253,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744697127590</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="测试更改（4.15）">
+      <option name="closed" value="true" />
+      <created>1744711281126</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1744711281126</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +306,8 @@
     <MESSAGE value="销售订单" />
     <MESSAGE value="销售生产" />
     <MESSAGE value="创建成产工单错误修改(提取字段为空判断)" />
-    <option name="LAST_COMMIT_MESSAGE" value="创建成产工单错误修改(提取字段为空判断)" />
+    <MESSAGE value="测试更改（4.15）" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试更改（4.15）" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

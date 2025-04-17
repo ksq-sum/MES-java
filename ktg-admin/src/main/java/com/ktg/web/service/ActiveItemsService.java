@@ -29,4 +29,9 @@ public class ActiveItemsService {
         item.setLocalName(localName);
         return activeItemsRepository.save(item);
     }
+
+    //修改sku产线和工序
+    public int updateActiveItems(String id, String depart, String craft) {
+        return activeItemsRepository.updateActiveItems(id, depart, craft);
+    }
 }
