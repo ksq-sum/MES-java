@@ -36,6 +36,10 @@ public class SalesOrderSkuService {
         return salesorderrepository.updateTongGuo(ids);
     }
 
+    public List<String> returnNullSkus() {
+        return salesOrderSkuRepository.returnNullSkus();
+    }
+
     //部分直接查询全部
     public List<SalesOrderSku> selectAll(){
         return salesOrderSkuRepository.selectAll();

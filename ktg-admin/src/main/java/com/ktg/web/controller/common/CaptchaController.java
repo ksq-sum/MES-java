@@ -124,8 +124,8 @@ public class CaptchaController {
 
         System.out.println("signMap:"+signMap);
         System.out.println("appId:"+appId);
-        String sign = ApiSign.sign(signMap, appId);
-        log.info("sign:{}", sign);
+//        String sign = ApiSign.sign(signMap, appId);
+//        log.info("sign:{}", sign);
         log.info(String.valueOf(timestampInSeconds));
     }
 }

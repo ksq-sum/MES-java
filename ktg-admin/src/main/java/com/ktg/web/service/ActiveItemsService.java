@@ -21,4 +21,12 @@ public class ActiveItemsService {
     public List<ActiveItems> getAllActiveItems() {
         return activeItemsRepository.findAll();
     }
+
+    public ActiveItems addActiveItem(String sku, String msku, String localName) {
+        ActiveItems item = new ActiveItems();
+        item.setSku(sku);
+        item.setMsku(msku);
+        item.setLocalName(localName);
+        return activeItemsRepository.save(item);
+    }
 }

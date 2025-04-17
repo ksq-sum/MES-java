@@ -53,4 +53,11 @@ public class SalesOrderSkuController {
     public List<SalesOrderSku> selectAll(){
         return salesOrderSkuService.selectAll();
     }
+
+    //查询全部销售订单
+    @GetMapping("returnNullSkus")
+    public List<String> returnNullSkus(){
+        return salesOrderSkuService.returnNullSkus();
+    }
+
 }
