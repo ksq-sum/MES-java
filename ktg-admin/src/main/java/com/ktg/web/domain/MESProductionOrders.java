@@ -1,6 +1,8 @@
 package com.ktg.web.domain;
-import javax.persistence.*;
+import lombok.ToString;
 
+import javax.persistence.*;
+@ToString
 @Entity
 @Table(name = "MES_PRODUCTION_ORDERS")
 public class MESProductionOrders {

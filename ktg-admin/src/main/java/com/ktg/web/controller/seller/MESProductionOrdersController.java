@@ -115,6 +115,18 @@ public class MESProductionOrdersController {
             map.put("workPlanCode", mesProductionOrder.getWorkPlanCode());
             map.put("planStatu",mesProductionOrder.getPlanStatu());
             List<MESProductionWorks> allMESProductionWorks = mesProductionWorksService.getAllMESProductionOrders(mesProductionOrder.getWorkPlanCode());
+            for (int i = 0; i < allMESProductionWorks.size(); i++) {
+                MESProductionWorks current = allMESProductionWorks.get(i);
+                Iterator<MESProductionWorks> iterator = allMESProductionWorks.iterator();
+                while (iterator.hasNext()) {
+                    MESProductionWorks other = iterator.next();
+                    if (current.getSku().equals(other.getSku())
+                            && !current.getId().equals(other.getId())) {
+                        current.setCount(current.getCount() + other.getCount());
+                        iterator.remove();
+                    }
+                }
+            }
             map.put("children",allMESProductionWorks);
             dataList.add(map);
         }

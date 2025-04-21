@@ -23,8 +23,9 @@ public class MESProductionWorksController {
         return mesProductionWorksService.saveMESProductionWorks(mesProductionWorks);
     }
 
-    @PutMapping("/updateorderWork")
-    public int updateorderWork(@RequestBody List<Integer> ids) {
-        return mesProductionWorksService.updateorderWork(ids);
+    @PostMapping("/updateorderWork")
+    public int updateorderWork(@RequestBody Map<String, Object> map) {
+
+        return mesProductionWorksService.updateorderWork((List<String>)map.get("ids"),(String)map.get("code"));
     }
 }

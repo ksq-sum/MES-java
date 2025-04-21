@@ -30,8 +30,8 @@ public class MESProductionWorksService {
         return byWorkPlanCode;
     }
     //批量修改生产工单状态
-    public int updateorderWork(List<Integer> ids) {
-        return mesProductionWorksRepository.updateorderWork(ids);
+    public int updateorderWork(List<String> ids,String code) {
+        return mesProductionWorksRepository.updateorderWork(ids,code);
     }
 
 }

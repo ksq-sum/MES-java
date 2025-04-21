@@ -17,8 +17,8 @@ public interface MESProductionWorksRepository extends JpaRepository<MESProductio
     //批量修改生产工单状态
     @Modifying
     @Transactional
-    @Query("update MESProductionWorks o set o.platformStatu = 2 where o.id in :ids")
-    int updateorderWork(@Param("ids") List<Integer> ids);
+    @Query("update MESProductionWorks o set o.platformStatu = 2 where o.sku in :ids and o.workPlanCode=:code")
+    int updateorderWork(@Param("ids") List<String> ids,@Param("code") String code);
 
 
 }

@@ -1,8 +1,10 @@
 package com.ktg.web.domain;
 
+import lombok.ToString;
+
 import javax.persistence.*;
 import java.time.LocalDateTime;
-
+@ToString
 @Entity
 @Table(name = "MES_PRODUCTION_WORKS")
 public class MESProductionWorks {
