@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe579ac9-1112-4cb4-9d39-6b230441dd8c" name="更改" comment="测试更改--产线=工序（下午4.17）">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/controller/seller/MESProductionOrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/controller/seller/MESProductionOrdersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/controller/seller/MESProductionWorksController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/controller/seller/MESProductionWorksController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/domain/MESProductionOrders.java" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/domain/MESProductionOrders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/domain/MESProductionWorks.java" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/domain/MESProductionWorks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/repository/MESProductionWorksRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/repository/MESProductionWorksRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/service/MESProductionWorksService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/src/main/java/com/ktg/web/service/MESProductionWorksService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/controller/seller/MESProductionOrdersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/controller/seller/MESProductionOrdersController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/controller/seller/MESProductionWorksController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/repository/MESProductionWorksRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/repository/MESProductionWorksRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/service/MESProductionWorksService.class" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/service/MESProductionWorksService.class" afterDir="false" />
+    <list default="true" id="fe579ac9-1112-4cb4-9d39-6b230441dd8c" name="更改" comment="测试更改--生产工单（下午4.21）">
+      <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/domain/MESProductionOrders.class" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/domain/MESProductionOrders.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/domain/MESProductionWorks.class" beforeDir="false" afterPath="$PROJECT_DIR$/ktg-admin/target/classes/com/ktg/web/domain/MESProductionWorks.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +176,7 @@
       <workItem from="1743646201950" duration="16893000" />
       <workItem from="1743987347495" duration="30636000" />
       <workItem from="1744073725756" duration="38873000" />
-      <workItem from="1745200836541" duration="8195000" />
+      <workItem from="1745200836541" duration="8581000" />
     </task>
     <task id="LOCAL-00001" summary="更改">
       <option name="closed" value="true" />
@@ -259,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744883278639</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="测试更改--生产工单（下午4.21）">
+      <option name="closed" value="true" />
+      <created>1745220618744</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1745220618744</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +305,8 @@
     <MESSAGE value="创建成产工单错误修改(提取字段为空判断)" />
     <MESSAGE value="测试更改（4.15）" />
     <MESSAGE value="测试更改--产线=工序（下午4.17）" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试更改--产线=工序（下午4.17）" />
+    <MESSAGE value="测试更改--生产工单（下午4.21）" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试更改--生产工单（下午4.21）" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
