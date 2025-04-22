@@ -5,13 +5,11 @@ import com.ktg.web.domain.MESProductionWorks;
 import com.ktg.web.service.MESProductionOrdersService;
 import com.ktg.web.service.MESProductionWorksService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.interceptor.TransactionAspectSupport;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -106,9 +104,16 @@ public class MESProductionOrdersController {
 
     @PostMapping("returnProductionOrder")
     //返回一个完整的计划订单
-    public Map<String, Object> returnProductionOrderreturnProductionOrder() {
+    public Map<String, Object> returnProductionOrderreturnProductionOrder(
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "10") int size,
+            @RequestParam(defaultValue = "createTime") String sortField,
+            @RequestParam(defaultValue = "desc") String sortDirection,
+            String workPlanCode) {
         Map<String, Object> returnArr = new HashMap<>();
-        List<MESProductionOrders> allMESProductionOrders = mesProductionOrdersService.getAllMESProductionOrders();
+        System.out.println("23432534"+workPlanCode);
+        Page<MESProductionOrders> allMESProductionOrders = mesProductionOrdersService.getAllMESProductionOrders(page,size,sortField,sortDirection,workPlanCode);
+        System.out.println("allMESProductionOrders:" + allMESProductionOrders.toString());
         List<Map<String, Object>> dataList = new ArrayList<>();
         for (MESProductionOrders mesProductionOrder : allMESProductionOrders) {
             Map<String, Object> map = new HashMap<>();
@@ -131,7 +136,7 @@ public class MESProductionOrdersController {
             dataList.add(map);
         }
         returnArr.put("dataList", dataList);
-        returnArr.put("total", allMESProductionOrders.size());
+        returnArr.put("total", allMESProductionOrders.getTotalElements());
         return returnArr;
     }
 

@@ -1,10 +1,12 @@
 package com.ktg.web.domain;
 
 
+import lombok.ToString;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
-
+@ToString
 @Entity
 @Table(name = "MES_SALES_ORDERS")
 public class SalesOrder {

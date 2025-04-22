@@ -2,9 +2,10 @@ package com.ktg.web.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
+import lombok.ToString;
 
 import javax.persistence.*;
-
+@ToString
 @Entity
 @Table(name = "SALES_ORDERS_SKU")
 public class SalesOrderSku {

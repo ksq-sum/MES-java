@@ -70,13 +70,14 @@ public class SalesOrderController {
 
             // 在这里处理每个 SalesOrder 对象，例如打印
             String globalOrderNo1 = order.getGlobalOrderNo();
+            System.out.println("globalOrderNo1: " + globalOrderNo1);
             List<Object[]> salesOrderSkus = salesOrderSkuService.getSalesOrdersByGlobalOrderNo(globalOrderNo1);
             List<Map<String, Object>> skuDictionaries = new ArrayList<>();
-//            System.out.println(salesOrderSkus);
+            System.out.println("tertgryut"+salesOrderSkus.toString());
             for (Object[] skuArray : salesOrderSkus) {
                 Map<String, Object> skuMap = new HashMap<>();
-//                System.out.println("sku: " + Arrays.toString(sku));
                 SalesOrderSku sku = (SalesOrderSku)skuArray[0];
+//                System.out.println("sku: " + sku);
                 skuMap.put("craft",skuArray[1]);
                 skuMap.put("depart",skuArray[2]);
                 skuMap.put("sku", sku.getSku());
