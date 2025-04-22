@@ -111,32 +111,60 @@ public class MESProductionOrdersController {
             @RequestParam(defaultValue = "desc") String sortDirection,
             String workPlanCode) {
         Map<String, Object> returnArr = new HashMap<>();
-        System.out.println("23432534"+workPlanCode);
-        Page<MESProductionOrders> allMESProductionOrders = mesProductionOrdersService.getAllMESProductionOrders(page,size,sortField,sortDirection,workPlanCode);
-        System.out.println("allMESProductionOrders:" + allMESProductionOrders.toString());
-        List<Map<String, Object>> dataList = new ArrayList<>();
-        for (MESProductionOrders mesProductionOrder : allMESProductionOrders) {
-            Map<String, Object> map = new HashMap<>();
-            map.put("workPlanCode", mesProductionOrder.getWorkPlanCode());
-            map.put("planStatu",mesProductionOrder.getPlanStatu());
-            List<MESProductionWorks> allMESProductionWorks = mesProductionWorksService.getAllMESProductionOrders(mesProductionOrder.getWorkPlanCode());
-            for (int i = 0; i < allMESProductionWorks.size(); i++) {
-                MESProductionWorks current = allMESProductionWorks.get(i);
-                Iterator<MESProductionWorks> iterator = allMESProductionWorks.iterator();
-                while (iterator.hasNext()) {
-                    MESProductionWorks other = iterator.next();
-                    if (current.getSku().equals(other.getSku())
-                            && !current.getId().equals(other.getId())) {
-                        current.setCount(current.getCount() + other.getCount());
-                        iterator.remove();
+        if(workPlanCode!=null && !workPlanCode.equals("")) {
+            List<String> code=mesProductionOrdersService.findCode(workPlanCode);
+            for(String c : code) {
+                Page<MESProductionOrders> allMESProductionOrders = mesProductionOrdersService.getAllMESProductionOrders(page,size,sortField,sortDirection,c);
+                List<Map<String, Object>> dataList = new ArrayList<>();
+                for (MESProductionOrders mesProductionOrder : allMESProductionOrders) {
+                    Map<String, Object> map = new HashMap<>();
+                    map.put("workPlanCode", mesProductionOrder.getWorkPlanCode());
+                    map.put("planStatu",mesProductionOrder.getPlanStatu());
+                    List<MESProductionWorks> allMESProductionWorks = mesProductionWorksService.getAllMESProductionOrders(mesProductionOrder.getWorkPlanCode());
+                    for (int i = 0; i < allMESProductionWorks.size(); i++) {
+                        MESProductionWorks current = allMESProductionWorks.get(i);
+                        Iterator<MESProductionWorks> iterator = allMESProductionWorks.iterator();
+                        while (iterator.hasNext()) {
+                            MESProductionWorks other = iterator.next();
+                            if (current.getSku().equals(other.getSku())
+                                    && !current.getId().equals(other.getId())) {
+                                current.setCount(current.getCount() + other.getCount());
+                                iterator.remove();
+                            }
+                        }
+                    }
+                    map.put("children",allMESProductionWorks);
+                    dataList.add(map);
+                }
+                returnArr.put("dataList", dataList);
+                returnArr.put("total", allMESProductionOrders.getTotalElements());
+            }
+        }else{
+            Page<MESProductionOrders> allMESProductionOrders = mesProductionOrdersService.getAllMESProductionOrders(page,size,sortField,sortDirection,workPlanCode);
+            List<Map<String, Object>> dataList = new ArrayList<>();
+            for (MESProductionOrders mesProductionOrder : allMESProductionOrders) {
+                Map<String, Object> map = new HashMap<>();
+                map.put("workPlanCode", mesProductionOrder.getWorkPlanCode());
+                map.put("planStatu",mesProductionOrder.getPlanStatu());
+                List<MESProductionWorks> allMESProductionWorks = mesProductionWorksService.getAllMESProductionOrders(mesProductionOrder.getWorkPlanCode());
+                for (int i = 0; i < allMESProductionWorks.size(); i++) {
+                    MESProductionWorks current = allMESProductionWorks.get(i);
+                    Iterator<MESProductionWorks> iterator = allMESProductionWorks.iterator();
+                    while (iterator.hasNext()) {
+                        MESProductionWorks other = iterator.next();
+                        if (current.getSku().equals(other.getSku())
+                                && !current.getId().equals(other.getId())) {
+                            current.setCount(current.getCount() + other.getCount());
+                            iterator.remove();
+                        }
                     }
                 }
+                map.put("children",allMESProductionWorks);
+                dataList.add(map);
             }
-            map.put("children",allMESProductionWorks);
-            dataList.add(map);
+            returnArr.put("dataList", dataList);
+            returnArr.put("total", allMESProductionOrders.getTotalElements());
         }
-        returnArr.put("dataList", dataList);
-        returnArr.put("total", allMESProductionOrders.getTotalElements());
         return returnArr;
     }
 

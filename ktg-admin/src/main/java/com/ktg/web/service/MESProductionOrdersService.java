@@ -32,4 +32,8 @@ public class MESProductionOrdersService {
         Pageable pageable = PageRequest.of(page, size, sort);
         return mesProductionOrdersRepository.findAllOrder(pageable,workPlanCode);
     }
+
+    public List<String> findCode(String workPlanCode) {
+        return mesProductionOrdersRepository.findCode(workPlanCode);
+    }
 }

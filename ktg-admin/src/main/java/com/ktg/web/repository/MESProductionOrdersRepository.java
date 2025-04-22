@@ -15,6 +15,10 @@ import java.util.List;
 @Repository
 public interface MESProductionOrdersRepository extends JpaRepository<MESProductionOrders, Integer> {
     // 这里可以定义一些自定义查询方法
-    @Query("select o from MESProductionOrders o where (o.workPlanCode is null or o.workPlanCode = '') or (:workPlanCode is null or o.workPlanCode = :workPlanCode)")
+    @Query("select o from MESProductionOrders o where :workPlanCode is null or o.workPlanCode =:workPlanCode")
     Page<MESProductionOrders> findAllOrder(Pageable pageable, @Param("workPlanCode") String workPlanCode);
+
+    //销售订单查询生产计划
+    @Query("select o.workPlanCode from MESProductionWorks o where o.globalOrderNo=:workPlanCode")
+    List<String> findCode(@Param("workPlanCode") String workPlanCode);
 }
