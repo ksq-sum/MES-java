@@ -112,10 +112,10 @@ public class MESProductionOrdersController {
             String workPlanCode) {
         Map<String, Object> returnArr = new HashMap<>();
         if(workPlanCode!=null && !workPlanCode.equals("")) {
+            List<Map<String, Object>> dataList = new ArrayList<>();
             List<String> code=mesProductionOrdersService.findCode(workPlanCode);
             for(String c : code) {
                 Page<MESProductionOrders> allMESProductionOrders = mesProductionOrdersService.getAllMESProductionOrders(page,size,sortField,sortDirection,c);
-                List<Map<String, Object>> dataList = new ArrayList<>();
                 for (MESProductionOrders mesProductionOrder : allMESProductionOrders) {
                     Map<String, Object> map = new HashMap<>();
                     map.put("workPlanCode", mesProductionOrder.getWorkPlanCode());
@@ -136,9 +136,9 @@ public class MESProductionOrdersController {
                     map.put("children",allMESProductionWorks);
                     dataList.add(map);
                 }
-                returnArr.put("dataList", dataList);
-                returnArr.put("total", allMESProductionOrders.getTotalElements());
             }
+            returnArr.put("dataList", dataList);
+            returnArr.put("total", code.size());
         }else{
             Page<MESProductionOrders> allMESProductionOrders = mesProductionOrdersService.getAllMESProductionOrders(page,size,sortField,sortDirection,workPlanCode);
             List<Map<String, Object>> dataList = new ArrayList<>();
