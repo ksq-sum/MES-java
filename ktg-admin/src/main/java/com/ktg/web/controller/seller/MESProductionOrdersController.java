@@ -11,6 +11,8 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.interceptor.TransactionAspectSupport;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.File;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
@@ -120,6 +122,7 @@ public class MESProductionOrdersController {
                     Map<String, Object> map = new HashMap<>();
                     map.put("workPlanCode", mesProductionOrder.getWorkPlanCode());
                     map.put("planStatu",mesProductionOrder.getPlanStatu());
+                    map.put("remack",mesProductionOrder.getRemack());
                     List<MESProductionWorks> allMESProductionWorks = mesProductionWorksService.getAllMESProductionOrders(mesProductionOrder.getWorkPlanCode());
                     for (int i = 0; i < allMESProductionWorks.size(); i++) {
                         MESProductionWorks current = allMESProductionWorks.get(i);
@@ -146,6 +149,7 @@ public class MESProductionOrdersController {
                 Map<String, Object> map = new HashMap<>();
                 map.put("workPlanCode", mesProductionOrder.getWorkPlanCode());
                 map.put("planStatu",mesProductionOrder.getPlanStatu());
+                map.put("remack",mesProductionOrder.getRemack());
                 List<MESProductionWorks> allMESProductionWorks = mesProductionWorksService.getAllMESProductionOrders(mesProductionOrder.getWorkPlanCode());
                 for (int i = 0; i < allMESProductionWorks.size(); i++) {
                     MESProductionWorks current = allMESProductionWorks.get(i);
@@ -167,5 +171,12 @@ public class MESProductionOrdersController {
         }
         return returnArr;
     }
+
+    //备注修改
+    @PostMapping("updateremack")
+    public int updateRemack(String id,String remack) {
+        return mesProductionOrdersService.updateremack(id,remack);
+    }
+
 
 }

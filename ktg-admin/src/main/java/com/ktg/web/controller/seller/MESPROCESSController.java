@@ -20,7 +20,6 @@ public class MESPROCESSController {
 
     //添加工序
     public void insertProcess(MESPROCESS mesProcess) {
-        System.out.println("32423543"+mesProcess);
         MESPROCESS mesprocess1=mesProcessService.getprocess(mesProcess.getProcess());
         if(mesprocess1==null){
             mesProcessService.insertprocess(mesProcess);
@@ -29,7 +28,6 @@ public class MESPROCESSController {
 
     //添加产线
     public void insertcraft(MESCRAFT mescraft) {
-        System.out.println("32423543"+mescraft);
         MESCRAFT mescraft1=mescraftService.getcraft(mescraft.getCraft());
         if(mescraft1==null){
             mescraftService.insertmescraft(mescraft);

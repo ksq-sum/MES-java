@@ -6,9 +6,11 @@ import com.ktg.web.domain.SalesOrder;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -21,4 +23,10 @@ public interface MESProductionOrdersRepository extends JpaRepository<MESProducti
     //销售订单查询生产计划
     @Query("select o.workPlanCode from MESProductionWorks o where o.globalOrderNo=:workPlanCode")
     List<String> findCode(@Param("workPlanCode") String workPlanCode);
+
+    //备注修改
+    @Modifying
+    @Transactional
+    @Query("update MESProductionOrders o set o.remack = :remack where o.workPlanCode=:id")
+    int updateremack(@Param("id") String id, @Param("remack") String remack);
 }

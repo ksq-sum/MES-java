@@ -30,6 +30,19 @@ public class MESProductionOrders {
     @Column(name = "delete_flag", columnDefinition = "INT DEFAULT 0")
     private Integer deleteFlag = 0; // 是否删除（0: 正常；1: 逻辑删除）
 
+
+    @Column(name = "remack", nullable = false)
+    private String remack;
+    public String getRemack() {
+        return remack;
+    }
+
+    public void setRemack(String remack) {
+        this.remack = remack;
+    }
+
+
+
     // Getters and Setters
 
     public Integer getId() {

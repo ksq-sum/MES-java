@@ -36,4 +36,9 @@ public class MESProductionOrdersService {
     public List<String> findCode(String workPlanCode) {
         return mesProductionOrdersRepository.findCode(workPlanCode);
     }
+
+    //备注修改
+    public int updateremack(String id,String remack) {
+        return mesProductionOrdersRepository.updateremack(id, remack);
+    }
 }
