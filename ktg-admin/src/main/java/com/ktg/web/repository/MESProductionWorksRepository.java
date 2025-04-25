@@ -20,5 +20,16 @@ public interface MESProductionWorksRepository extends JpaRepository<MESProductio
     @Query("update MESProductionWorks o set o.platformStatu = 2 where o.sku in :ids and o.workPlanCode=:code")
     int updateorderWork(@Param("ids") List<String> ids,@Param("code") String code);
 
+    //备注修改
+    @Modifying
+    @Transactional
+    @Query("update MESProductionWorks o set o.remack = :remack where o.id=:id")
+    int updateremackWork(@Param("id") int id, @Param("remack") String remack);
+
+    //图片修改
+    @Modifying
+    @Transactional
+    @Query("update MESProductionWorks o set o.renderingImage = :img where o.id=:id")
+    int updateImg(@Param("id") int id, @Param("img") String img);
 
 }

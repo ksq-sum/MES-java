@@ -74,6 +74,16 @@ public class MESProductionWorks {
     @Column(name = "delete_flag", columnDefinition = "int default 0")
     private Integer deleteFlag = 0; // 默认值为 0
 
+    @Column(name = "remack", nullable = false)
+    private String remack;
+    public String getRemack() {
+        return remack;
+    }
+
+    public void setRemack(String remack) {
+        this.remack = remack;
+    }
+
     // Getters 和 Setters
     public Integer getId() {
         return id;

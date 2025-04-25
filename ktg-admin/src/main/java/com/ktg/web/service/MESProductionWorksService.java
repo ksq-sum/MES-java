@@ -34,4 +34,14 @@ public class MESProductionWorksService {
         return mesProductionWorksRepository.updateorderWork(ids,code);
     }
 
+    //备注修改
+    public int updateremackWork(int id,String remack) {
+        return mesProductionWorksRepository.updateremackWork(id, remack);
+    }
+
+    //图片修改
+    public int updateImg(int id,String img) {
+        return mesProductionWorksRepository.updateImg(id, img);
+    }
+
 }

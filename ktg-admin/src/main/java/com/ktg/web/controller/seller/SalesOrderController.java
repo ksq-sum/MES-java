@@ -44,11 +44,12 @@ public class SalesOrderController {
             Integer a,
             Integer b,
             String globalOrderNo,
+            String platformOrderName,
             Integer ifOutTime
     ) {
         System.out.println("platformStatus:"+platformStatus);
         Map<String, Object> orderMapZ = new HashMap<>();
-        Page<SalesOrder> salesOrders = salesOrderService.getAllSalesOrders(page, size, sortField, sortDirection,platformStatus,a,b,globalOrderNo,ifOutTime);
+        Page<SalesOrder> salesOrders = salesOrderService.getAllSalesOrders(page, size, sortField, sortDirection,platformStatus,a,b,globalOrderNo,platformOrderName,ifOutTime);
         System.out.println("salesOrders:"+salesOrders.getTotalElements());
         List<Map<String, Object>> orderDictionaries = new ArrayList<>();
         //
